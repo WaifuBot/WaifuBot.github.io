@@ -1,7 +1,7 @@
 [
 	{
 		"Q": "How do I claim a waifu?",
-		"A": "You can claim one by typing out <prefix>claim <name>. Diacritics are ignored, if the name is two words then you can type then in any order."
+		"A": "You can claim one by typing out <prefix>claim <name>. Diacritics are ignored. If the name is only two words then you can type them in any order."
 	},
 	{
 		"Q": "How do I earn WeebPoints?",

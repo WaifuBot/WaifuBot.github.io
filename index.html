@@ -29,6 +29,10 @@
 
 
     <style type="text/css">
+        html {
+            margin-left: calc(100vw - 100%);
+        }
+
         .white {
             color: white !important;
         }
@@ -55,7 +59,8 @@
             transform: translateY(35%);
         }
 
-        .fade-enter-active, .fade-leave-active {
+        .fade-enter-active,
+        .fade-leave-active {
             transition-property: opacity;
             transition-duration: .15s;
         }
@@ -64,7 +69,8 @@
             transition-delay: .15s;
         }
 
-        .fade-enter, .fade-leave-active {
+        .fade-enter,
+        .fade-leave-active {
             opacity: 0
         }
     </style>
@@ -86,7 +92,7 @@
         <transition name="fade" mode="out-in">
             <router-view></router-view>
         </transition>
-        
+
     </div>
 </body>
 
