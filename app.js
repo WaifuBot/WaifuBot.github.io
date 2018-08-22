@@ -37,9 +37,9 @@ const Home = {
 
                 <div class="ui row" style="padding-top: 2em;">
                     <a :href="data.invite">
-                        <button class="ui labeled icon button large purple">Invite
-                            <i class="star outline icon"></i>
-                            </i>
+                        <button class="ui button large purple labeled icon">
+                        <i class="discord icon"></i>
+                            Invite
                         </button>
                     </a>
                 </div>
@@ -53,7 +53,7 @@ const Home = {
     `,
     data() {
         return {
-            data: null
+            data: ''
         }
     },
     mounted() {
@@ -134,7 +134,7 @@ const About = {
     `,
     data() {
         return {
-            data: null
+            data: ''
         }
     },
     mounted() {

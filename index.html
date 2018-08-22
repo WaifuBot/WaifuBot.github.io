@@ -19,10 +19,10 @@
     <!-- Site Properties -->
     <title>WaifuBot</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./app.js"></script>
@@ -75,13 +75,12 @@
     <div id="app">
         <div class="ui inverted menu borderless">
             <div class="ui container">
-                <router-link to="/home"  class="header item">
-                    WaifuBot
+                <router-link to="/home" class="header item" active-class="active">
+                    <b>WaifuBot</b>
                 </router-link>
-                <router-link to="/home" class="item">Home</router-link>
-                <router-link to="/commands" class="item">Commands</router-link>
-                <router-link to="/faq" class="item">FAQ</router-link>
-                <router-link to="/about" class="item">About</router-link>
+                <router-link to="/commands" class="item" active-class="active">Commands</router-link>
+                <router-link to="/faq" class="item" active-class="active">FAQ</router-link>
+                <router-link to="/about" class="item" active-class="active">About</router-link>
             </div>
         </div>
         <transition name="fade" mode="out-in">
