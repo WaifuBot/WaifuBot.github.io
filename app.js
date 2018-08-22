@@ -37,7 +37,7 @@ const Home = {
 
                 <div class="ui row" style="padding-top: 2em;">
                     <a :href="data.invite">
-                        <button class="ui button large purple labeled icon">
+                        <button class="ui button big blurple labeled icon">
                         <i class="discord icon"></i>
                             Invite
                         </button>
