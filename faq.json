@@ -1,0 +1,46 @@
+[
+	{
+		"Q": "How do I claim a waifu?",
+		"A": "You can claim one by typing out <prefix>claim <name>. Diacritics are ignored, if the name is two words then you can type then in any order."
+	},
+	{
+		"Q": "How do I earn WeebPoints?",
+		"A": "You can either send waifus to work with <prefix>work <waifuId> or use <prefix>daily. The former will allow you to work your waifus, the latter will allow you to claim your daily WeebPoints. You can also get WeebPoints by voting on DBL (\"dailyvote\" command!)."
+	},
+	{
+		"Q": "Why can't I claim a waifu?",
+		"A": "If the bot does not respond then I have probably restarted the bot which wipes the spawn from memory. If it DOES respond, then you probably got the name wrong. MAL has the name romanized a bit strangely, if you do not remember then you can do <prefix>lookup <name> to get an idea of what the name is."
+	},
+	{
+		"Q": "What can I spend WeebPoints on?",
+		"A": "Do <prefix>shop in order to browse a gallery of shop items. Badges require that you own 80% of the characters in the corresponding series; quotes require that you own the character associated with them."
+	},
+	{
+		"Q": "What's up with this \"Ranking\" stuff?",
+		"A": "You can rank waifus on the global leaderboard. Do <prefix>lookup <name> to find their ID, then do <prefix> rate <1-10 rating> <waifuId> in order to rate a waifu. You can then do <prefix>rankings to take a look at the waifu leaderboard."
+	},
+	{
+		"Q": "So about this configurability...",
+		"A": "If you have the \"Manage Server\" permission (i.e. Administrator), you can set the server\"s prefix and spawn channel. Do <prefix>setprefix <prefix> in order to set the prefix; do <prefix>setspawnchannel <#channel> in order to set where waifus will spawn."
+	},
+	{
+		"Q": "What's up with the stats in \"view\" command?",
+		"A": "Nothing special, yet..."
+	},
+	{
+		"Q": "How do waifus spawn?",
+		"A": "Waifus have a 1% chance of spawning every time a message is sent. If a previous waifu had already spawned, then it will not be overwritten for one minute."
+	},
+	{
+		"Q": "I've claimed a waifu, what can I do with them now?",
+		"A": "You can interact, trade, and fight. Take a look at the help command for more details."
+	},
+	{
+		"Q": "Isn't this bot a bit boring?",
+		"A": "Yeah, it is. I am still working on it. Do <prefix>suggest <idea> to suggest an idea!"
+	},
+	{
+		"Q": "Can I have a character added to the bot?",
+		"A": "Yeah. Use <prefix>suggestcharacter <MAL url>. I'll add the character if they aren't obscure."
+	}
+]
