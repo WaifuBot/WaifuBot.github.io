@@ -146,7 +146,7 @@ const About = {
 
 
 const routes = [
-    { path: '/', component: Home },
+    { path: '/', redirect: 'home' },
     { path: '/home', component: Home },
     { path: '/about', component: About },
     { path: '/faq', component: Faq },
@@ -154,6 +154,7 @@ const routes = [
 ];
 
 const router = new VueRouter({
+    linkActiveClass: 'active',
     routes: routes
 });
 
