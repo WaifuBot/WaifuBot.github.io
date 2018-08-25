@@ -83,6 +83,7 @@
 </head>
 
 <body>
+    <noscript>ENABLE JS IT DOES NOT HURT YOU</noscript>
     <div id="app">
         <div class="ui inverted menu borderless">
             <div class="ui container">
@@ -123,7 +124,7 @@
                             <router-link to="/faq" tag="button" class="ui labeled icon button">FAQ
                                 <i class="file alternate outline icon"></i>
                             </router-link>
-                            <a :href="data.support">
+                            <a :href="data.support" target="_top">
                                 <button class="ui labeled icon button">Support
                                     <i class="question icon"></i>
                                 </button>
@@ -135,7 +136,7 @@
                         </div>
         
                         <div class="ui row" style="padding-top: 2em;">
-                            <a :href="data.invite">
+                            <a :href="data.invite" target="_top">
                                 <button class="ui button big blurple labeled icon">
                                 <i class="discord icon"></i>
                                     Invite

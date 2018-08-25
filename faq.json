@@ -42,5 +42,9 @@
 	{
 		"Q": "Can I have a character added to the bot?",
 		"A": "Yeah. Use <prefix>suggestcharacter <MAL url>. I'll add the character if they aren't obscure."
+	},
+	{
+		"Q": "what if i automate ur bot xd xd",
+		"A": "yeah i dont give a shit xdxd"
 	}
 ]
