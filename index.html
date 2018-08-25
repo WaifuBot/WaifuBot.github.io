@@ -142,6 +142,11 @@
                                     Invite
                                 </button>
                             </a>
+
+                            <router-link to="/testimonials" tag="button" class="ui small inverted button right labeled icon">
+                                <i class="arrow right icon"></i>
+                                Testimonials
+                            </router-link>
                         </div>
                     </div>
                     <div class="six wide column">
@@ -192,6 +197,32 @@
         <div class="ui main text container center">
             <h1 class="white">About</h1>
             <p class="white">{{ data.about }}</p>
+        </div>
+    </script>
+    <script type="text/x-template" id="testimonials-template">
+        <div class="ui container">
+            <div style="margin-bottom: 2em">
+                <router-link to="/home" tag="button" class="ui button labeled icon">
+                    <i class="arrow left icon"></i>
+                    Back
+                </router-link>
+            </div>
+            <div class="ui cards">
+                <div class="card" v-for="x in data">
+                    <div class="content">
+                    <img class="right floated mini ui image" :src="'./avatars/' + x.avatar">
+                    <div class="header">
+                        {{x.name}}
+                    </div>
+                    <div class="meta">
+                        {{x.undertext}}
+                    </div>
+                    <div class="description">
+                        {{x.content}}
+                    </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </script>
 </body>

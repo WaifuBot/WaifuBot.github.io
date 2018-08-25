@@ -56,13 +56,28 @@ const About = {
     }
 };
 
+const Testimonials = {
+    template: '#testimonials-template',
+    data() {
+        return {
+            data: ''
+        }
+    },
+    mounted() {
+        axios
+            .get('./testimonials.json')
+            .then(x => (this.data = x.data));
+    }
+};
+
 
 const routes = [
     { path: '/', redirect: 'home' },
     { path: '/home', component: Home },
     { path: '/about', component: About },
     { path: '/faq', component: Faq },
-    { path: '/commands', component: Commands }
+    { path: '/commands', component: Commands },
+    { path: '/testimonials', component: Testimonials }
 ];
 
 const router = new VueRouter({
