@@ -8,7 +8,7 @@
 {
 	"name": "PurpleFlamingo",
 	"undertext": "DiscordEmoji Resident",
-	"content": "Waifubot is the best bot",
+	"content": "Waifubot is the best bot, I mean its better than pokecord",
 	"avatar": "purpleflamingo.png"
 },
 {
@@ -22,6 +22,12 @@
 	"undertext": "DiscordEmoji Resident",
 	"content": "I have to say that the bot is really well done and even though is relatively new I can see that it has really good potential.",
 	"avatar": "joshy.png"
+},
+{
+	"name": "Tribbles",
+	"undertext": "DiscordEmoji Resident",
+	"content": "Great bot to waste your day with trying to truly catch them all and complete your set of favourite animus waifus and husbandos. Also, give me my badge back.",
+	"avatar": "tribbles.png"
 }
 ]
 
