@@ -9,7 +9,7 @@
 	},
 	{
 		"Q": "Why can't I claim a waifu?",
-		"A": "If the bot does not respond then I have probably restarted the bot which wipes the spawn from memory. If it DOES respond, then you probably got the name wrong. MAL has the name romanized a bit strangely, if you do not remember then you can do <prefix>lookup <name> to get an idea of what the name is."
+		"A": "If the bot does not respond then the spawn was probably invalidated; spawns over 2 days old are automatically cleaned. If it DOES respond, then you probably got the name wrong. MAL has the name romanized a bit strangely, if you do not remember then you can do <prefix>lookup <name> to get an idea of what the name is."
 	},
 	{
 		"Q": "What can I spend WeebPoints on?",
