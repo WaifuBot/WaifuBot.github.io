@@ -29,7 +29,7 @@
 	},
 	{
 		"Q": "How do waifus spawn?",
-		"A": "Waifus have a 1% chance of spawning every time a message is sent. If a previous waifu had already spawned, then it will not be overwritten for one minute."
+		"A": "Waifus have a 2% chance of spawning every time a message is sent. Waifus will not spawn if a previous waifu had spawned less than a minute before."
 	},
 	{
 		"Q": "I've claimed a waifu, what can I do with them now?",
