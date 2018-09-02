@@ -102,6 +102,7 @@
                 <router-link to="/commands" class="item">Commands</router-link>
                 <router-link to="/faq" class="item">FAQ</router-link>
                 <router-link to="/about" class="item">About</router-link>
+                <router-link to="/guides" class="item">Guides</router-link>
             </div>
         </div>
         <transition name="fade" mode="out-in">
@@ -233,6 +234,219 @@
                 </div>
             </div>
         </div>
+    </script>
+    <script type="text/x-template" id="guides-template">
+        <div class="ui container" style="margin-bottom: 2em">
+            <h3 class="ui top attached header inverted">Table of Contents</h3>
+            <div class="ui attached segment" style="margin-bottom:1em;">
+                <div class="ui relaxed divided list" v-for="x in data">
+                    <div class="item">
+                    <div class="content">
+                        <h2 class="header"><a :href="'#' + x.content">{{ x.title }}</a></h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div v-for="(x, i) in data" style="margin-bottom:1em;">
+                <h3 class="ui top attached header inverted" :id="x.content">
+                    <b>{{ x.title }}</b>
+                </h3>
+                <div class="ui attached segment">
+                    <p v-html="document.getElementById(x.content).innerHTML"></p>
+                </div>
+            </div>
+        </div>
+
+    </script>
+    <script type="text/x-template" id="guides-starting">
+        Have you ever dreamt of having an anime harem with big tiddy anime girls or big black muscular anime men? Ever wanted a girlfriend,
+        but you're constantly rejected by society? Look no further than WaifuBot, the bot that will grant you your dreams of having
+        a harem full of hot anime bitches.
+        <br/>
+        <br/>Getting started is real easy; all you have to do is claim waifus by their name. I know that you're going to ask it right
+        now: "Where are all of the goddamn anime hoes?" Be a little patient. For every message sent in your Discord server, a waifu
+        has a 2% chance of appearing. Just keep talking and one will appear eventually.
+        <br/>
+        <br/>
+
+        <div class="ui image">
+            <div class="ui black label ribbon">
+                Spawned Character
+            </div>
+            <img src="https://cdn.discordapp.com/attachments/485936130064384001/485938725021417495/unknown.png">
+        </div>
+
+        <br />
+        <br />
+
+        They'll pop up in the middle of fucking nowhere. In the middle of your debate on whether thighs or ass are better, a waifu will just pop up.
+        This is where it goes HAM. You will fight to the death for the waifu, and you fingers will be smoking from how fast you type out their name on the keyboard.
+
+        <br />
+        <br />
+
+        <div class="ui image">
+            <div class="ui black label ribbon">
+                Claiming
+            </div>
+            <img src="https://cdn.discordapp.com/attachments/472141702073810946/485933003093049344/free_meme.gif">
+        </div>
+
+        <br />
+        <br />
+
+        Cool beans. Now you have a waifu. What can you do with them? You can interact, trade, and fight them. They also count towards your badges and quotes on your profile. 
+        All waifus aren't the same, by the way - there are multiple copies of one waifu with different types and stats.
+
+        <br />
+        <br />
+
+        <div class="ui image">
+            <div class="ui black label ribbon">
+                Interaction
+            </div>
+            <img src="https://cdn.discordapp.com/attachments/472141702073810946/485934219370037290/free_meme.gif">
+        </div>
+
+        <br />
+        <br />
+
+        That's the basics. Here are some other basic commands you should know:
+        <ul>
+            <li>
+            interact (waifu id) - You can interact with your waifu and boost affection with this command.
+            </li>
+            <li>
+            list - List all of your waifus. There are a lot of sorting options, do (prefix)help list to find some.
+            </li>
+            <li>
+            remove (waifu id) - Remove a waifu from your list. I don't know what kind of horrible person would use this.
+            </li>
+            <li>
+            view (waifu id) - View a waifu from your list. This will list their stats and some extended information.
+            </li>
+        </ul>
+        Keep scrolling for more information.
+    </script>
+    <script type="text/x-template" id="guides-trading">
+        Your friend has a waifu that they don't like, but you like. You have a waifu that you don't like, but your friend likes. 
+        You are both in posession of a waifu that you hate and the other loves. Now, what to do? If you haven't figured it out by now, you're pretty dense. You trade.
+
+        <br/>
+        <br/>
+
+        Initiate a trade with the trade command, (prefix)trade (#user). The person on the receiving end of the trade will do .accept (#user). Make sure that they do it fast. The trade has a timeout of thirty seconds.
+
+        <br />
+        <br />
+
+        <div class="ui image">
+            <div class="ui black label ribbon">
+                Trade
+            </div>
+            <img src="https://cdn.discordapp.com/attachments/485936130064384001/485936187568029707/unknown.png">
+        </div>
+
+        <br />
+        <br />
+
+        You can add and remove offers with the commands mentioned in the embed. When you are both satisfied with the trade, use the confirm command to finalize the trade and swap your waifus. If you feel like the other person is breaking your balls, you can always abort the trade.
+    </script>
+    <script type="text/x-template" id="guides-stats">
+        When you use the view command on a character, you may notice something. Four attributes: Agility, Strength, Defense, and Endurance. These stats will contribute to waifu fights. CSI is the average of all four stats, but I just call it CSI to sound cool.
+
+        <br />
+        <br />
+
+        <div class="ui image">
+            <div class="ui black label ribbon">
+                View
+            </div>
+            <img src="https://cdn.discordapp.com/attachments/485936130064384001/485939413063303207/unknown.png">
+        </div>
+
+        <br />
+        <br />
+
+        I am not going to elaborate on fights here, view the fights section for more information on that. I'm also not going to tell you what the stats do for the fight, figure it out yourself.
+
+        <br />
+        <br />
+
+        Types are a bit different from stats. They don't contribute to fights, but affect interaction cooldowns. Types are from the Greek alphabet. As their position in the alphabet increases, so does the rarity.
+        You can find out which type a character is on the list, or by looking at the color of the embed. I'll list them all right here in order of rarity and with their corresponding colors for convenience.
+        <br />
+        <ul>
+            <li style="color: rgb(61, 69, 83);"><b>Alpha - α</b></li>
+            <li style="color: rgb(80, 94, 60);"><b>Beta - β</b></li>
+            <li style="color: rgb(76, 0, 0);"><b>Gamma - γ</b></li>
+            <li style="color: rgb(21, 25, 41);"><b>Delta - δ</b></li>
+            <li style="color: rgb(121, 34, 155);"><b>Epsilon - ε</b></li>
+            <li style="color: rgb(255, 132, 240);"><b>Zeta - ζ</b></li>
+        </ul>
+    </script>
+    <script type="text/x-template" id="guides-fights">
+    Waifus are a bit boring if you can't let them brawl in a ring and mutilate each other. That's why WaifuBot lets you fight waifus. Just use the fight command with your waifu's id and have the other person accept with their waifu's id. 
+    The bot will automatically predict a fight between them. Various factors of the fight are affected by your waifu's stats.
+
+    <br />
+    <br />
+
+    <div class="ui image">
+        <div class="ui black label ribbon">
+            Fight
+        </div>
+        <img src="https://cdn.discordapp.com/attachments/485936130064384001/485943242739679233/unknown.png
+        ">
+    </div>
+
+    <br />
+    <br />
+
+    Oh, I almost forgot to mention. For every fight you win or lose, a counter on your profile is incremented. Take a look at the relevant section for an image.
+
+    </script>
+
+    <script type="text/x-template" id="guides-profiles">
+        WaifuBot isn't all about waifus. It's also about YOU. All users have a profile. Just do the profile command to display it! If you're wondering how to set your favorite character, it's (prefix)setwaifu (global character MAL ID).
+
+        <br />
+        <br />
+    
+        <div class="ui image">
+            <div class="ui black label ribbon">
+                Profile
+            </div>
+            <img src="https://cdn.discordapp.com/attachments/485936130064384001/485944299746492454/unknown.png">
+        </div>
+
+        <br />
+        <br />
+        
+        If you haven't used the bot before, then your profile will be a bit barren. In order to populate it, you need to buy items from the shop. And in order to buy items from the shop, you need WeebPoints.
+
+        <br />
+        <br />
+    
+        <div class="ui image">
+            <div class="ui black label ribbon">
+                Shop
+            </div>
+            <img src="https://cdn.discordapp.com/attachments/485936130064384001/485944978351063051/unknown.png">
+        </div>
+        
+        <br />
+        <br />
+
+        I'm too lazy to go through the rest of the details. Take a look at the shop embed, it has pretty much everything that you need to know.
+
+        Some useful commands for the bot's economy:
+
+        <ul>
+            <li>working - This is how you'll put your waifus to work. Follow the instructions in the embed.</li>
+            <li>daily - Your daily allowance of WeebPoints. Do it every day to collect some.</li>
+            <li>dailyvote - Vote on DBL for some extra points.</li>
+        </ul>
     </script>
 </body>
 

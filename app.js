@@ -42,6 +42,21 @@ const Faq = {
     }
 };
 
+const Guides = {
+    template: '#guides-template',
+    data() {
+        return {
+            data: null,
+            html: []
+        }
+    },
+    mounted() {
+        axios
+            .get('./guides.json')
+            .then(x => { this.data = x.data; });
+    }
+};
+
 const About = {
     template: '#about-template',
     data() {
@@ -77,7 +92,8 @@ const routes = [
     { path: '/about', component: About },
     { path: '/faq', component: Faq },
     { path: '/commands', component: Commands },
-    { path: '/testimonials', component: Testimonials }
+    { path: '/testimonials', component: Testimonials },
+    { path: '/guides', component: Guides }
 ];
 
 const router = new VueRouter({

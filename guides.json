@@ -1,0 +1,22 @@
+[
+	{
+		"title": "Getting Started",
+		"content": "guides-starting"
+	},
+	{
+		"title": "Trading",
+		"content": "guides-trading"
+	},
+	{
+		"title": "Character Stats and Types",
+		"content": "guides-stats"
+	},
+	{
+		"title": "Fights",
+		"content": "guides-fights"
+	},
+	{
+		"title": "Profiles and the Shop",
+		"content": "guides-profiles"
+	}
+]
