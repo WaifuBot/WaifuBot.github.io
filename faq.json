@@ -4,6 +4,10 @@
 		"A": "You can claim one by typing out <prefix>claim <name>. Diacritics are ignored. If the name is only two words then you can type them in any order."
 	},
 	{
+		"Q": "What's 'Type' on my waifu's view page?",
+		"A": "Type is a 'rarity' of sorts, I guess. Alpha (α) is the most common, Zeta (ζ) is the most rare. Characters of a higher type will have a decreased interaction cooldown."
+	},
+	{
 		"Q": "How do I earn WeebPoints?",
 		"A": "You can either send waifus to work with <prefix>work <waifuId> or use <prefix>daily. The former will allow you to work your waifus, the latter will allow you to claim your daily WeebPoints. You can also get WeebPoints by voting on DBL (\"dailyvote\" command!)."
 	},
